@@ -254,6 +254,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{
 		.github\workflows\healthchecks_aws_systemsmanager_cd.yml = .github\workflows\healthchecks_aws_systemsmanager_cd.yml
 		.github\workflows\healthchecks_aws_systemsmanager_cd_preview.yml = .github\workflows\healthchecks_aws_systemsmanager_cd_preview.yml
 		.github\workflows\healthchecks_aws_systemsmanager_ci.yml = .github\workflows\healthchecks_aws_systemsmanager_ci.yml
+		.github\workflows\healthchecks_azureappconfiguration_cd.yml = .github\workflows\healthchecks_azureappconfiguration_cd.yml
+		.github\workflows\healthchecks_azureappconfiguration_cd_preview.yml = .github\workflows\healthchecks_azureappconfiguration_cd_preview.yml
+		.github\workflows\healthchecks_azureappconfiguration_ci.yml = .github\workflows\healthchecks_azureappconfiguration_ci.yml
 		.github\workflows\healthchecks_azurekeyvault_cd.yml = .github\workflows\healthchecks_azurekeyvault_cd.yml
 		.github\workflows\healthchecks_azurekeyvault_cd_preview.yml = .github\workflows\healthchecks_azurekeyvault_cd_preview.yml
 		.github\workflows\healthchecks_azurekeyvault_ci.yml = .github\workflows\healthchecks_azurekeyvault_ci.yml
@@ -393,6 +396,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthChecks.ApplicationStatus", "src\HealthChecks.ApplicationStatus\HealthChecks.ApplicationStatus.csproj", "{88739521-A9BC-49E1-BB98-E9D63109C231}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthChecks.ApplicationStatus.Tests", "test\HealthChecks.ApplicationStatus.Tests\HealthChecks.ApplicationStatus.Tests.csproj", "{403776CB-7229-4063-85C7-C34428BDAA8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthChecks.AzureAppConfiguration", "src\HealthChecks.AzureAppConfiguration\HealthChecks.AzureAppConfiguration.csproj", "{6E8F0520-53F2-4FB0-9584-54FB8319CF63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthChecks.AzureAppConfiguration.Tests", "test\HealthChecks.AzureAppConfiguration.Tests\HealthChecks.AzureAppConfiguration.Tests.csproj", "{FF20C8E0-BE82-4DE5-AE2D-C0FA277AEEB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -840,6 +847,14 @@ Global
 		{403776CB-7229-4063-85C7-C34428BDAA8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{403776CB-7229-4063-85C7-C34428BDAA8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{403776CB-7229-4063-85C7-C34428BDAA8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E8F0520-53F2-4FB0-9584-54FB8319CF63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E8F0520-53F2-4FB0-9584-54FB8319CF63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E8F0520-53F2-4FB0-9584-54FB8319CF63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E8F0520-53F2-4FB0-9584-54FB8319CF63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF20C8E0-BE82-4DE5-AE2D-C0FA277AEEB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF20C8E0-BE82-4DE5-AE2D-C0FA277AEEB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF20C8E0-BE82-4DE5-AE2D-C0FA277AEEB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF20C8E0-BE82-4DE5-AE2D-C0FA277AEEB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -956,6 +971,8 @@ Global
 		{CB1A7B68-E24A-4729-9401-606F3A914586} = {FF4414C2-8863-4ADA-8A1D-4B9F25C361FE}
 		{88739521-A9BC-49E1-BB98-E9D63109C231} = {2A3FD988-2BB8-43CF-B3A2-B70E648259D4}
 		{403776CB-7229-4063-85C7-C34428BDAA8F} = {FF4414C2-8863-4ADA-8A1D-4B9F25C361FE}
+		{6E8F0520-53F2-4FB0-9584-54FB8319CF63} = {2A3FD988-2BB8-43CF-B3A2-B70E648259D4}
+		{FF20C8E0-BE82-4DE5-AE2D-C0FA277AEEB7} = {FF4414C2-8863-4ADA-8A1D-4B9F25C361FE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2B8C62A1-11B6-469F-874C-A02443256568}

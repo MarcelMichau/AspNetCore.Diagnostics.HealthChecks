@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>$(NetFrameworkVersion);$(NetStandardVersion)</TargetFrameworks>
+    <PackageTags>$(PackageTags);Azure App Configuration;Configuration</PackageTags>
+    <Description>HealthChecks.AzureAppConfiguration is the health check package for Azure App Configuration</Description>
+    <Version>$(HealthCheckAppConfiguration)</Version>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Azure.Data.AppConfiguration" Version="1.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="6.0.8" />
+  </ItemGroup>
+
+</Project>

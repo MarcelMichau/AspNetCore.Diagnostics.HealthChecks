@@ -119,6 +119,7 @@ if ($suffix -eq "") {
     exec { & dotnet pack .\src\HealthChecks.Aws.SystemsManager\HealthChecks.Aws.SystemsManager.csproj -c Release -o .\artifacts --include-symbols --no-build }
     exec { & dotnet pack .\src\HealthChecks.Aws.Sns\HealthChecks.Aws.Sns.csproj -c Release -o .\artifacts --include-symbols --no-build }
     exec { & dotnet pack .\src\HealthChecks.Aws.Sqs\HealthChecks.Aws.Sqs.csproj -c Release -o .\artifacts --include-symbols --no-build }
+    exec { & dotnet pack .\src\HealthChecks.AzureAppConfiguration\HealthChecks.AzureAppConfiguration.csproj -c Release -o .\artifacts --include-symbols --no-build }
 }
 
 else {
@@ -175,4 +176,5 @@ else {
     exec { & dotnet pack .\src\HealthChecks.Aws.SystemsManager\HealthChecks.Aws.SystemsManager.csproj -c Release -o .\artifacts --include-symbols --no-build --version-suffix=$suffix }
     exec { & dotnet pack .\src\HealthChecks.Aws.Sns\HealthChecks.Aws.Sns.csproj -c Release -o .\artifacts --include-symbols --no-build --version-suffix=$suffix }
     exec { & dotnet pack .\src\HealthChecks.Aws.Sqs\HealthChecks.Aws.Sqs.csproj -c Release -o .\artifacts --include-symbols --no-build --version-suffix=$suffix }
+    exec { & dotnet pack .\src\HealthChecks.AzureAppConfiguration\HealthChecks.AzureAppConfiguration.csproj -c Release -o .\artifacts --include-symbols --no-build --version-suffix=$suffix }
 }

@@ -1,0 +1,22 @@
+namespace HealthChecks.AzureAppConfiguration
+{
+    public class AzureAppConfigurationHealthCheck : Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck
+    {
+        public AzureAppConfigurationHealthCheck(System.Uri appConfigurationUri, Azure.Core.TokenCredential azureCredential, HealthChecks.AzureAppConfiguration.AzureAppConfigurationOptions options) { }
+        public System.Threading.Tasks.Task<Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult> CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext context, System.Threading.CancellationToken cancellationToken = default) { }
+    }
+    public class AzureAppConfigurationOptions
+    {
+        public AzureAppConfigurationOptions() { }
+        public HealthChecks.AzureAppConfiguration.AzureAppConfigurationOptions AddConfigSetting(string configSettingKey) { }
+    }
+}
+namespace Microsoft.Extensions.DependencyInjection
+{
+    public static class AzureAppConfigurationHealthChecksBuilderExtensions
+    {
+        public static Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder AddAzureAppConfiguration(this Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder builder, System.Func<System.IServiceProvider, System.Uri> appConfigurationServiceUriFactory, Azure.Core.TokenCredential credential, System.Action<System.IServiceProvider, HealthChecks.AzureAppConfiguration.AzureAppConfigurationOptions>? setup, string? name = null, Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus? failureStatus = default, System.Collections.Generic.IEnumerable<string>? tags = null, System.TimeSpan? timeout = default) { }
+        public static Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder AddAzureAppConfiguration(this Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder builder, System.Uri appConfigurationServiceUri, Azure.Core.TokenCredential credential, System.Action<HealthChecks.AzureAppConfiguration.AzureAppConfigurationOptions>? setup, string? name = null, Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus? failureStatus = default, System.Collections.Generic.IEnumerable<string>? tags = null, System.TimeSpan? timeout = default) { }
+        public static Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder AddAzureAppConfiguration(this Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder builder, System.Uri appConfigurationServiceUri, Azure.Core.TokenCredential credential, System.Action<System.IServiceProvider, HealthChecks.AzureAppConfiguration.AzureAppConfigurationOptions> setup, string? name = null, Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus? failureStatus = default, System.Collections.Generic.IEnumerable<string>? tags = null, System.TimeSpan? timeout = default) { }
+    }
+}

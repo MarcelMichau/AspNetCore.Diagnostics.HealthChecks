@@ -13,6 +13,7 @@
     <HealthCheckAWSSns>6.0.0</HealthCheckAWSSns>
     <HealthCheckAWSSqs>6.0.0</HealthCheckAWSSqs>
     <HealthCheckAWSSystemsManager>6.0.0</HealthCheckAWSSystemsManager>
+    <HealthCheckAzureAppConfiguration>6.0.0</HealthCheckAzureAppConfiguration>
     <HealthCheckAzureDigitalTwin>6.0.0</HealthCheckAzureDigitalTwin>
     <HealthCheckAzureServiceBus>6.0.4</HealthCheckAzureServiceBus>
     <HealthCheckAzureStorage>6.1.1</HealthCheckAzureStorage>

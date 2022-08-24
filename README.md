@@ -5,6 +5,7 @@
 [![Aws Sns Build status](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks/actions/workflows/healthchecks_aws_sns_ci.yml/badge.svg)](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks/actions/workflows/healthchecks_aws_sns_ci.yml)
 [![Aws Sqs Build status](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks/actions/workflows/healthchecks_aws_sqs_ci.yml/badge.svg)](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks/actions/workflows/healthchecks_aws_sqs_ci.yml)
 [![Aws SystemsManager Build status](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks/actions/workflows/healthchecks_aws_systemsmanager_ci.yml/badge.svg)](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks/actions/workflows/healthchecks_aws_systemsmanager_ci.yml)
+[![Azure App Configuration Build status](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks/actions/workflows/healthchecks_appconfiguration_ci.yml/badge.svg)](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks/actions/workflows/healthchecks_appconfiguration_ci.yml)
 [![Azure IoTHub Build status](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks/actions/workflows/healthchecks_azure_iothub_ci.yml/badge.svg)](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks/actions/workflows/healthchecks_azure_iothub_ci.yml)
 [![Azure DigitalTwin Build status](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks/actions/workflows/healthchecks_azure_digitaltwin_ci.yml/badge.svg)](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks/actions/workflows/healthchecks_azure_digitaltwin_ci.yml)
 [![Azure KeyVault Build status](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks/actions/workflows/healthchecks_azurekeyvault_ci.yml/badge.svg)](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks/actions/workflows/healthchecks_azurekeyvault_ci.yml)
@@ -96,49 +97,50 @@ This repository offers a wide collection of **ASP.NET Core** Health Check packag
 
 HealthChecks packages include health checks for:
 
-| Package                | Downloads                                                                                                                                                           | Notes                                                                  |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| ApplicationStatus      | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.ApplicationStatus)](https://www.nuget.org/packages/AspNetCore.HealthChecks.ApplicationStatus)     | 
-| ArangoDB               | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.ArangoDb)](https://www.nuget.org/packages/AspNetCore.HealthChecks.ArangoDb)                       |
-| Amazon S3              | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Aws.S3)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Aws.S3)                           |
-| Amazon Secrets Manager | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Aws.SecretsManager)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Aws.SecretsManager)   |
-| Amazon SNS             | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Aws.Sns)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Aws.Sns)                         |
-| Amazon SQS             | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Aws.Sqs)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Aws.Sqs)                         |
-| Amazon Systems Manager | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Aws.SystemsManager)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Aws.SystemsManager)   |
-| Azure IoT Hub          | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Azure.IoTHub)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Azure.IoTHub)               |
-| Azure DigitalTwin      | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.AzureDigitalTwin)](https://www.nuget.org/packages/AspNetCore.HealthChecks.AzureDigitalTwin)       | Subscription status, models and instances                              |
-| Azure Key Vault        | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.AzureKeyVault)](https://www.nuget.org/packages/AspNetCore.HealthChecks.AzureKeyVault)             |
-| Azure Service Bus      | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.AzureServiceBus)](https://www.nuget.org/packages/AspNetCore.HealthChecks.AzureServiceBus)         | EventHub, Queue and Topics                                             |
-| Azure Storage          | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.AzureStorage)](https://www.nuget.org/packages/AspNetCore.HealthChecks.AzureStorage)               | Blob, File, Queue and Table                                            |
-| Consul                 | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Consul)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Consul)                           |
-| CosmosDb               | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.CosmosDb)](https://www.nuget.org/packages/AspNetCore.HealthChecks.CosmosDb)                       |
-| Azure DocumentDb       | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.DocumentDb)](https://www.nuget.org/packages/AspNetCore.HealthChecks.DocumentDb)                   |
-| Amazon DynamoDb        | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.DynamoDb)](https://www.nuget.org/packages/AspNetCore.HealthChecks.DynamoDb)                       |
-| Elasticsearch          | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Elasticsearch)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Elasticsearch)             |
-| EventStore             | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.EventStore)](https://www.nuget.org/packages/AspNetCore.HealthChecks.EventStore)                   |
-| Google Cloud Firestore | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Gcp.CloudFirestore)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Gcp.CloudFirestore)   |
-| Gremlin                | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Gremlin)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Gremlin)                         |
-| Hangfire               | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Hangfire)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Hangfire)                       |
-| IbmMQ                  | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.IbmMQ)](https://www.nuget.org/packages/AspNetCore.HealthChecks.IbmMQ)                             |
-| Kafka                  | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Kafka)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Kafka)                             |
-| Kubernetes             | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Kubernetes)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Kubernetes)                   |
-| MongoDB                | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.MongoDb)](https://www.nuget.org/packages/AspNetCore.HealthChecks.MongoDb)                         |
-| MySql                  | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.MySql)](https://www.nuget.org/packages/AspNetCore.HealthChecks.MySql)                             |
-| Nats                   | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Nats)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Nats)                               | NATS, messaging, message-bus, pubsub                                   |
-| Network                | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Network)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Network)                         | Ftp, SFtp, Dns, Tcp port, Smtp, Imap, Ssl                              |
-| Postgres               | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.NpgSql)](https://www.nuget.org/packages/AspNetCore.HealthChecks.NpgSql)                           |
-| Identity Server        | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.OpenIdConnectServer)](https://www.nuget.org/packages/AspNetCore.HealthChecks.OpenIdConnectServer) |
-| Oracle                 | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Oracle)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Oracle)                           |
-| RabbitMQ               | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.RabbitMQ)](https://www.nuget.org/packages/AspNetCore.HealthChecks.RabbitMQ)                       |
-| RavenDB                | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.RavenDB)](https://www.nuget.org/packages/AspNetCore.HealthChecks.RavenDB)                         |
-| Redis                  | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Redis)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Redis)                             |
-| SendGrid               | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.SendGrid)](https://www.nuget.org/packages/AspNetCore.HealthChecks.SendGrid)                       |
-| SignalR                | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.SignalR)](https://www.nuget.org/packages/AspNetCore.HealthChecks.SignalR)                         |
-| Solr                   | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Solr)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Solr)                               |
-| Sqlite                 | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Sqlite)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Sqlite)                           |
-| Sql Server             | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.SqlServer)](https://www.nuget.org/packages/AspNetCore.HealthChecks.SqlServer)                     |
-| System                 | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.System)](https://www.nuget.org/packages/AspNetCore.HealthChecks.System)                           | Disk Storage, Folder, Private Memory, Virtual Memory, Process, Windows Service |
-| Uri                    | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Uris)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Uris)                               | Single uri and uri groups                                              |
+| Package                 | Downloads                                                                                                                                                               | Notes                                                                          |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| ApplicationStatus       | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.ApplicationStatus)](https://www.nuget.org/packages/AspNetCore.HealthChecks.ApplicationStatus)         |
+| ArangoDB                | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.ArangoDb)](https://www.nuget.org/packages/AspNetCore.HealthChecks.ArangoDb)                           |
+| Amazon S3               | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Aws.S3)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Aws.S3)                               |
+| Amazon Secrets Manager  | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Aws.SecretsManager)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Aws.SecretsManager)       |
+| Amazon SNS              | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Aws.Sns)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Aws.Sns)                             |
+| Amazon SQS              | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Aws.Sqs)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Aws.Sqs)                             |
+| Amazon Systems Manager  | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Aws.SystemsManager)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Aws.SystemsManager)       |
+| Azure IoT Hub           | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Azure.IoTHub)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Azure.IoTHub)                   |
+| Azure App Configuration | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.AzureAppConfiguration)](https://www.nuget.org/packages/AspNetCore.HealthChecks.AzureAppConfiguration) |
+| Azure DigitalTwin       | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.AzureDigitalTwin)](https://www.nuget.org/packages/AspNetCore.HealthChecks.AzureDigitalTwin)           | Subscription status, models and instances                                      |
+| Azure Key Vault         | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.AzureKeyVault)](https://www.nuget.org/packages/AspNetCore.HealthChecks.AzureKeyVault)                 |
+| Azure Service Bus       | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.AzureServiceBus)](https://www.nuget.org/packages/AspNetCore.HealthChecks.AzureServiceBus)             | EventHub, Queue and Topics                                                     |
+| Azure Storage           | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.AzureStorage)](https://www.nuget.org/packages/AspNetCore.HealthChecks.AzureStorage)                   | Blob, File, Queue and Table                                                    |
+| Consul                  | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Consul)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Consul)                               |
+| CosmosDb                | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.CosmosDb)](https://www.nuget.org/packages/AspNetCore.HealthChecks.CosmosDb)                           |
+| Azure DocumentDb        | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.DocumentDb)](https://www.nuget.org/packages/AspNetCore.HealthChecks.DocumentDb)                       |
+| Amazon DynamoDb         | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.DynamoDb)](https://www.nuget.org/packages/AspNetCore.HealthChecks.DynamoDb)                           |
+| Elasticsearch           | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Elasticsearch)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Elasticsearch)                 |
+| EventStore              | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.EventStore)](https://www.nuget.org/packages/AspNetCore.HealthChecks.EventStore)                       |
+| Google Cloud Firestore  | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Gcp.CloudFirestore)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Gcp.CloudFirestore)       |
+| Gremlin                 | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Gremlin)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Gremlin)                             |
+| Hangfire                | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Hangfire)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Hangfire)                           |
+| IbmMQ                   | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.IbmMQ)](https://www.nuget.org/packages/AspNetCore.HealthChecks.IbmMQ)                                 |
+| Kafka                   | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Kafka)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Kafka)                                 |
+| Kubernetes              | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Kubernetes)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Kubernetes)                       |
+| MongoDB                 | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.MongoDb)](https://www.nuget.org/packages/AspNetCore.HealthChecks.MongoDb)                             |
+| MySql                   | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.MySql)](https://www.nuget.org/packages/AspNetCore.HealthChecks.MySql)                                 |
+| Nats                    | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Nats)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Nats)                                   | NATS, messaging, message-bus, pubsub                                           |
+| Network                 | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Network)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Network)                             | Ftp, SFtp, Dns, Tcp port, Smtp, Imap, Ssl                                      |
+| Postgres                | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.NpgSql)](https://www.nuget.org/packages/AspNetCore.HealthChecks.NpgSql)                               |
+| Identity Server         | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.OpenIdConnectServer)](https://www.nuget.org/packages/AspNetCore.HealthChecks.OpenIdConnectServer)     |
+| Oracle                  | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Oracle)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Oracle)                               |
+| RabbitMQ                | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.RabbitMQ)](https://www.nuget.org/packages/AspNetCore.HealthChecks.RabbitMQ)                           |
+| RavenDB                 | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.RavenDB)](https://www.nuget.org/packages/AspNetCore.HealthChecks.RavenDB)                             |
+| Redis                   | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Redis)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Redis)                                 |
+| SendGrid                | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.SendGrid)](https://www.nuget.org/packages/AspNetCore.HealthChecks.SendGrid)                           |
+| SignalR                 | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.SignalR)](https://www.nuget.org/packages/AspNetCore.HealthChecks.SignalR)                             |
+| Solr                    | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Solr)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Solr)                                   |
+| Sqlite                  | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Sqlite)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Sqlite)                               |
+| Sql Server              | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.SqlServer)](https://www.nuget.org/packages/AspNetCore.HealthChecks.SqlServer)                         |
+| System                  | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.System)](https://www.nuget.org/packages/AspNetCore.HealthChecks.System)                               | Disk Storage, Folder, Private Memory, Virtual Memory, Process, Windows Service |
+| Uri                     | [![Nuget](https://img.shields.io/nuget/dt/AspNetCore.HealthChecks.Uris)](https://www.nuget.org/packages/AspNetCore.HealthChecks.Uris)                                   | Single uri and uri groups                                                      |
 
 > We support netcoreapp 2.2, 3.0 and 3.1. Please use package versions 2.2.X, 3.0.X and 3.1.X to target different versions.
 
@@ -151,6 +153,7 @@ Install-Package AspNetCore.HealthChecks.Aws.Sns
 Install-Package AspNetCore.HealthChecks.Aws.Sqs
 Install-Package AspNetCore.HealthChecks.Aws.SystemsManager
 Install-Package AspNetCore.HealthChecks.Azure.IoTHub
+Install-Package AspNetCore.HealthChecks.AzureAppConfiguration
 Install-Package AspNetCore.HealthChecks.AzureDigitalTwin
 Install-Package AspNetCore.HealthChecks.AzureKeyVault
 Install-Package AspNetCore.HealthChecks.AzureServiceBus
